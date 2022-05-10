@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: var(--body-font);
+}
+
+img{
+    width: 100%;
+}
+div{
+    border: 1px solid red;
+}
+
+.wrapper{
+    padding: 1rem .5rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+.container{
+    position: relative;
+    background-color: rgb(136, 127, 127);
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+}
+.nav{
+    width: 100%;
+    height: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aliceblue;
+}
+.logo{
+    width: 50px;
+    height: 20px;
+    margin-left: 1rem;
+}
+.hamberger{
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+}
+/* mobile small */
+@media screen and (min-width:480px) {
+
+    .container{
+        background-color: red;
+    }
+}
+/* mobile */
+@media screen and (min-width:640px) {
+
+    .wrapper{
+        padding:1.7rem 1rem 1rem ;
+    }
+    .container{
+        background-color: blue;
+    }
+}
+/* tablet */
+@media screen and (min-width:768px) {
+    .container{
+        background-color: green;
+    }
+}
+/* laptop screen */
+@media screen and (min-width:1024px) {
+    .container{
+        background-color: yellow;
+    }
+}
+/* large screen */
+@media screen and (min-width:1280px) {
+    .container{
+        background-color: aqua;
+    }
+}
